@@ -55,7 +55,10 @@ export class Env {
     const value = Env.getStringOrNull(key)
 
     if (!value) {
-      throw new EnvironmentNotFoundException()
+      throw new EnvironmentNotFoundException(
+        404,
+        `environment ${key} not found`
+      )
     }
 
     return value
@@ -75,7 +78,10 @@ export class Env {
     const value = Env.getIntOrNull(key)
 
     if (!value) {
-      throw new EnvironmentNotFoundException()
+      throw new EnvironmentNotFoundException(
+        404,
+        `environment ${key} not found`
+      )
     }
 
     return value

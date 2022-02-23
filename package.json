@@ -7,7 +7,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@vyrnn/zeraph-exceptions": "link:../zeraph-exceptions"
+    "@vyrnn/zeraph-exceptions": "^0.0.3-ALPHA"
   },
   "devDependencies": {
     "@types/node": "^17.0.16",
